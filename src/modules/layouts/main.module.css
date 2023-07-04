@@ -1,0 +1,586 @@
+/* criando barra de navegação */
+nav#topmenu {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    width: 145%;
+    background-color: #fff;
+    transition: top 0.3s ease;
+    z-index: 999;
+    padding-top: 1%; 
+    padding-bottom: 0%;
+  }
+nav#topmenu.topmenu {
+    top: 0;
+  }
+ul {
+    font-size: medium;
+    list-style: none;
+    display: flex;
+    justify-content:space-around ;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 20px 40%;
+    margin: -1%;
+    border-bottom: solid white thin;
+}  
+  a.inicio1, a.sobremim, a.projetos, a.habilidades {
+    color: white; 
+    transition: letter-spacing 0.3s ease;
+}
+  
+  a.inicio1:hover, a.sobremim:hover, a.projetos:hover, a.habilidades:hover {
+    text-shadow: ligth 2s infinite;
+    letter-spacing: 0.3px;
+  }
+h3#Hy {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 8em;
+    margin-block-end: 0em;
+    margin-inline-start: 13.3%;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h1#nome {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    margin-inline-start: 15.9%;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h4#hy2 {
+    display: block;
+    margin-block-start: 0.13em;
+    margin-block-end: .33em;
+    margin-inline-start: 14.8%;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+a.mylinkedin{
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    display:block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a.mylinkedin {
+    position: relative;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+    height: 50px;
+    width: 30%;   
+    display: block;
+    margin-block-start: 0.33em;
+    margin-block-end: 3em;
+    margin-inline-start: 20%;
+    margin-inline-end: 0px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.6em;
+    border-bottom: solid blue;
+    transition: letter-spacing 0.3s ease;
+}
+a.mylinkedin:hover {
+    letter-spacing: 5px;
+}
+img.troll{
+    display: block;
+    margin-block-start: -15em;
+    margin-block-end: 1em;
+    margin-inline-start: 57%;
+    margin-inline-end: 0px;
+    width: 33%;
+    height: auto; 
+}
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes fade-out {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+img.troll {
+    animation: fade-in 1s ease-in-out forwards;
+}
+img.troll:hover{
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 13px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: blue;
+}
+
+/*isso tudo foi o incio e a nav*/
+/*sobre mim*/
+
+h1#sobre_mim1 {
+    width: 100%;
+    height: 4px;
+    background-color: blue; 
+    position: relative;
+}
+h1#sobre_mim1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3%;
+    background-color: blue; 
+    animation: border-animation 3s linear infinite;
+    color: white;
+}
+@keyframes border-animation {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+h1#sobre_mim1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 4em;
+    margin-block-end: 1em;
+    margin-inline-start: 15%;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    background-color: black;
+    position: relative;
+    border-radius: 30px 30px 0px 0px;
+    height: 40px;
+    width: 30%; 
+    padding-top: 0.5%;
+    padding-left: 1%; 
+}
+
+  
+h1#sobre_mim1 {
+    background-image: linear-gradient(to right, blue, white, blue);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: brilho 1.5s linear infinite;
+}
+p.sobremimtxt {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 25em;
+    margin-inline-start: 10%;
+    margin-inline-end: 0px;
+    height: 180px;
+    width: 50%; 
+    background-color: black;
+    position: relative;
+    border-radius: 0px 30px 0px 0px;
+    line-height: 25px;
+    border-bottom: solid blue;
+    text-align: center;
+    padding-top: 1.5%; 
+    padding-bottom: 0%;
+}
+img.miguel {
+width: 28%;
+display: block;
+margin-block-start: -35em;
+margin-block-end: 1em;
+margin-inline-start: 68%;
+margin-inline-end: 0px;
+
+height: auto; 
+}
+
+/* aba de Projetos */
+
+h1.projects {
+    margin-block-start: 0%;
+    margin-block-end: 2em;
+    margin-inline-start: 37%;
+    margin-inline-end: 0px;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    width: 25%;
+    text-align: center;
+    
+}
+/* RGB DO TEXTO PROJETOS */
+h1.projects{
+    -webkit-animation-name: animation;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+}
+@-webkit-keyframes animation {
+    0.00% { background-color: red;    }
+   14.29% { background-color: orange; }
+   28.57% { background-color: yellow; }
+   42.86% { background-color: green;  }
+   57.14% { background-color: blue;   }
+   71.43% { background-color: indigo; }
+   85.71% { background-color: violet; }
+  100.00% { background-color: red; }
+}
+@keyframes animation {
+    0.00% { background-color: red;    }
+   16.67% { background-color: orange; }
+   33.33% { background-color: yellow; }
+   50.00% { background-color: green;  }
+   66.67% { background-color: blue;   }
+   83.33% { background-color: indigo; }
+  100.00% { background-color: violet; }
+}
+/* RGB DO TEXTO PROJETOS */
+/* Foto dos projetos/
+/*--------------------------------------*/
+img.inprogress1{
+    display: block;
+    width: 25%;
+    margin-block-start: 0%;
+    margin-block-end: 0.9em;
+    margin-inline-start: 10%;
+    margin-inline-end: 0px;
+    overflow: hidden;
+}
+img.inprogress1 img {
+    transition: transform 0.5s ease; 
+}
+  
+img.inprogress1:hover {
+    transform: scale(1.05);
+}
+
+img.inprogress2{
+    display: block;
+    width: 25%;
+    margin-block-start: -181px;
+    margin-block-end: 0.9em;
+    margin-inline-start: 37%;
+    margin-inline-end: 0px;
+    overflow: hidden;
+}
+img.inprogress2 img {
+    transition: transform 0.5s ease; 
+}
+  
+img.inprogress2:hover {
+    transform: scale(1.05);
+}
+
+img.inprogress3{
+    display: block;
+    width: 25%;
+    margin-block-start: -186px;
+    margin-block-end: 0.9em;
+    margin-inline-start: 64%;
+    margin-inline-end: 0px;
+    overflow: hidden;
+}
+img.inprogress3 img {
+    transition: transform 0.5s ease; 
+}
+  
+img.inprogress3:hover {
+    transform: scale(1.05);
+}
+/* parte de baixo start*/
+/*--------------------------------------*/
+img.inprogress4{
+    display: block;
+    width: 25%;
+    margin-block-start: 0px;
+    margin-block-end: 0.9em;
+    margin-inline-start: 10%;
+    margin-inline-end: 0px;
+    overflow: hidden;
+}
+img.inprogress4 img {
+    transition: transform 0.5s ease; 
+}
+  
+img.inprogress4:hover {
+    transform: scale(1.05);
+}
+
+img.inprogress5{
+    display: block;
+    width: 25%;
+    margin-block-start: -186px;
+    margin-block-end: 0.9em;
+    margin-inline-start: 37%;
+    margin-inline-end: 0px;
+    overflow: hidden;
+}
+img.inprogress5 img {
+    transition: transform 0.5s ease; 
+}
+  
+img.inprogress5:hover {
+    transform: scale(1.05);
+}
+
+img.inprogress6{
+    display: block;
+    width: 25%;
+    margin-block-start: -186px;
+    margin-block-end: 0.9em;
+    margin-inline-start: 64%;
+    margin-inline-end: 0px;
+    overflow: hidden;
+}
+img.inprogress6 img {
+    transition: transform 0.5s ease; 
+}
+  
+img.inprogress6:hover {
+    transform: scale(1.05);
+}
+
+/* parte de baixo end*/
+/*--------------------------------------*/
+
+/* Parte oculta start*/
+/*--------------------------------------*/
+
+img.inprogress1oc{
+    display: block;
+    width: 25%;
+    margin-block-start: 0px;
+    margin-block-end: 0.9em;
+    margin-inline-start: 10%;
+    margin-inline-end: 0px;
+    overflow: hidden;
+}
+img.inprogress1oc img {
+    transition: transform 0.5s ease; 
+}
+  
+img.inprogress1oc:hover {
+    transform: scale(1.05);
+}
+
+img.inprogress2oc{
+    display: block;
+    width: 25%;
+    margin-block-start: -186px;
+    margin-block-end: 0.9em;
+    margin-inline-start: 37%;
+    margin-inline-end: 0px;
+    overflow: hidden;
+}
+img.inprogress2oc img {
+    transition: transform 0.5s ease; 
+}
+  
+img.inprogress2oc:hover {
+    transform: scale(1.05);
+}
+
+img.inprogress3oc{
+    display: block;
+    width: 25%;
+    margin-block-start: -186px;
+    margin-block-end: 0.9em;
+    margin-inline-start: 64%;
+    margin-inline-end: 0px;
+    overflow: hidden;
+    
+}
+img.inprogress3oc img {
+    transition: transform 0.5s ease; 
+}
+  
+img.inprogress3oc:hover {
+    transform: scale(1.05);
+}
+
+/* Parte oculta end*/
+/*--------------------------------------*/
+/*Botão ver mais/Ver menos*/
+button#ver_mais {
+    display: block;
+    width: 25%;
+    margin-block-start: 0px;
+    margin-block-end: 0.9em;
+    margin-inline-start: 37%;
+    margin-inline-end: 0px;   
+    color: black;
+    background-color: whitesmoke;
+    border-bottom: solid red;
+}
+div.ver_maisENF {
+    display: block;
+    width: 25%;
+    margin-block-start: -2.2%;
+    margin-block-end: 0.9em;
+    margin-inline-start: 10%;
+    margin-inline-end: 0px;   
+    color: black;
+    background-color: whitesmoke; 
+    border-bottom: solid red;
+}
+div.ver_maisENF2 {
+    display: block;
+    width: 25%;
+    margin-block-start: -2.2%;
+    margin-block-end: 0.9em;
+    margin-inline-start: 64%;
+    margin-inline-end: 0px;   
+    color: black;
+    background-color: whitesmoke; 
+    border-bottom: solid red;
+}
+
+/* aqui é a aba de habilidades*/
+
+h1.habilidades {
+    margin-block-start: 0%;
+    margin-block-end: 2em;
+    margin-inline-start: 10%;
+    margin-inline-end: 0px;
+    margin-top: 18%;
+    margin-bottom: 0%;
+    width: 80%;
+    text-align: center;
+    
+}
+/* RGB DO TEXTO HAbilidades */
+h1.habilidades{
+    -webkit-animation-name: animation;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+}
+@-webkit-keyframes animation {
+    0.00% { background-color: red;    }
+   14.29% { background-color: orange; }
+   28.57% { background-color: yellow; }
+   42.86% { background-color: green;  }
+   57.14% { background-color: blue;   }
+   71.43% { background-color: indigo; }
+   85.71% { background-color: violet; }
+  100.00% { background-color: red; }
+}
+@keyframes animation {
+    0.00% { background-color: red;    }
+   16.67% { background-color: orange; }
+   33.33% { background-color: yellow; }
+   50.00% { background-color: green;  }
+   66.67% { background-color: blue;   }
+   83.33% { background-color: indigo; }
+  100.00% { background-color: violet; }
+}
+
+/* END RGB DO TEXTO HABILIDADE */
+
+img.JaSc{
+    display: block;
+    width: 20%;
+    margin-block-start: 10px;
+    margin-block-end: 0.9em;
+    margin-inline-start: 10%;
+    margin-inline-end: 0px;
+    overflow: hidden;
+}
+img.RUBYn{
+    display: block;
+    width: 15%;
+    margin-block-start: -18%;
+    margin-block-end: 0.9em;
+    margin-inline-start: 32%;
+    margin-inline-end: 0px;
+    overflow: hidden;
+}
+img.photoreact{
+    display: block;
+    width: 27%;
+    margin-block-start: -14%;
+    margin-block-end: 0.9em;
+    margin-inline-start: 47%;
+    margin-inline-end: 0px;
+    overflow: hidden;
+}
+img.photolinux{
+    display: block;
+    width: 15%;
+    margin-block-start: -19%;
+    margin-block-end: 0.9em;
+    margin-inline-start: 70%;
+    margin-inline-end: 0px;
+    overflow: hidden; 
+}
+p.habilidadestxt{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 25em;
+    margin-inline-start: 30%;
+    margin-inline-end: 0px;
+    height: 0px;
+    width: 40%; 
+    position: relative;
+    line-height: 170%;
+    color:cyan;
+    text-align: center;
+
+}
+
+
+/* rodapé */
+
+footer.rodape{ 
+    background-color:#262626 ;
+    color: white;
+    text-align: center;
+    padding: 1% 0 ;
+    font-size:.8rem;
+    border-top: solid #f8f9fa   .1rem;
+    box-shadow: inset 0 -.1rem rgba(0,0,0,.0);
+}
+img.whatsapp{
+    width: 3%;
+}
+img.instagram{
+    width: 3%;
+}
+img.github{
+    width: 3%;
+}
+img.linkedinicon{
+    width: 2.9%;
+}
+
